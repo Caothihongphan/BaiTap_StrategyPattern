@@ -9,7 +9,7 @@ package caothihongphan_59131835_straterypattern.Bai2;
  *
  * @author DELL
  */
-public class ThanhToanCOD implements IThanhToan{
+public abstract class ThanhToanCOD implements IThanhToan{
 
 
     @Override

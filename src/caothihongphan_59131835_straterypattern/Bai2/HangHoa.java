@@ -9,10 +9,21 @@ package caothihongphan_59131835_straterypattern.Bai2;
  *
  * @author DELL
  */
-public class HangHoa {
-    String TenHH;
-    int gia;
-    String mota;
+public abstract class HangHoa {
+    protected  String TenHH;
+   protected  int gia;
+    protected  String mota;
+
+    public HangHoa()
+    {
+        super();
+    }
+    public HangHoa(String TenHH, int gia, String mota) {
+        this.TenHH = TenHH;
+        this.gia = gia;
+        this.mota = mota;
+    }
+    
 
     public String getTenHH() {
         return TenHH;
@@ -38,8 +49,15 @@ public class HangHoa {
         this.mota = mota;
     }
     
-    @Override
-    public String toString() {
-        return "HangHoa@[Ten Hang Hoa=" + TenHH + ", Gia=" + gia + ",mo ta : "+ mota+"]";
+    public String hienThiTT() {
+      String thongTin = "";
+      thongTin = "tên hàng hóa" + TenHH + "giá cả" + gia +"Mô tả " + mota;
+//      System.out.println(thongTin);
+      return thongTin;
     }
+
+    void inDS() {
+    }
+    
+    
 }

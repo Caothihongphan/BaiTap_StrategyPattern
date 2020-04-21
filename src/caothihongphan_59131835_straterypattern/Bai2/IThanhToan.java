@@ -11,6 +11,6 @@ package caothihongphan_59131835_straterypattern.Bai2;
  */
 public interface IThanhToan {
     public double thanhtoan(int tienHang);
-
+     public abstract void inDS();
     
 }

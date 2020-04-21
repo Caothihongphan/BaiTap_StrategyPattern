@@ -9,7 +9,7 @@ package caothihongphan_59131835_straterypattern.Bai2;
  *
  * @author DELL
  */
-public  class ThanhToanOnline implements IThanhToan {
+public abstract  class ThanhToanOnline implements IThanhToan {
 
 
     @Override
@@ -19,5 +19,7 @@ public  class ThanhToanOnline implements IThanhToan {
         else 
             return tienHang*0.07;
     }
+
+   
         
 }

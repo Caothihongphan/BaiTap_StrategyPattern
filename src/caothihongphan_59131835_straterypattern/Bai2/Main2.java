@@ -16,12 +16,15 @@ public class Main2 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        GioHang giohang1= new GioHang();
-        giohang1.setHtTT(new ThanhToanOnline() );
-        System.out.println("danh sach hang hoa" );
+        HangHoa hanghoa = new HangHoa() {} ;
         
-       GioHang giohang2= new GioHang();
-        giohang2.setHtTT(new ThanhToanCOD());
-   
+        hanghoa.setTenHH("gao");
+        hanghoa.setGia(30000);
+        hanghoa.setMota("kg");
+        
+        System.out.println("danh sach hang hoa");
+         hanghoa.inDS();
+           
+
 }
 }
